@@ -93,8 +93,8 @@ console.log("python".includes('on') && "jargon".includes('on'))
 
 
 // 6 - I hope this course is not full of jargon. Check if jargon is in the sentence.
-sentence = "I hope this course is not full of jargon"
-console.log(sentence.includes("jargon"))
+let sentence_6 = "I hope this course is not full of jargon"
+console.log(sentence_6.includes("jargon"))
 
 
 // 7 - Generate a random number between 0 and 100 inclusively.

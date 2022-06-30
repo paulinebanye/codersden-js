@@ -1,6 +1,5 @@
 // Exercise: Level 1
 // 1 - Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
-
 let challenge = '30 Days Of JavaScript'
 
 
@@ -22,12 +21,10 @@ console.log(challenge.toLowerCase())
 
 // 6 - Cut (slice) out the first word of the string using substr() or substring() method
 console.log(challenge.substring(0,2))
-console.log(challenge.substr(0,2))
 
 
 // 7 - Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
 console.log(challenge.substring(3))
-console.log(challenge.substr(3))
 
 
 // 8 - Check if the string contains a word Script using includes() method
@@ -68,19 +65,19 @@ console.log(challenge.indexOf("a"))
 console.log(challenge.lastIndexOf("a"))
 
 
-// 17b - Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-let sentence = "You cannot end a sentence with because because because is a conjunction"
-console.log(sentence.indexOf("because"))
+// 17 - Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+let text_17 = "You cannot end a sentence with because because because is a conjunction"
+console.log(text_17.indexOf("because"))
 
 
 // 18 - Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-let senTence = "You cannot end a sentence with because because because is a conjunction"
-console.log(senTence.lastIndexOf("because"))
+let text_18 = "You cannot end a sentence with because because because is a conjunction"
+console.log(text_18.lastIndexOf("because"))
 
 
 // 19 - Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-let sentence2 = "You cannot end a sentence with because because because is a conjunction"
-console.log(sentence2.search("because"))
+let text_19 = "You cannot end a sentence with because because because is a conjunction"
+console.log(text_19.search("because"))
 
 
 // 20 - Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
