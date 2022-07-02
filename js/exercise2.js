@@ -17,21 +17,10 @@ const teresa = "Love is not patronizing and charity isn't about pity, it is abou
 console.log(teresa)
 
 
-// 3 - Check if typeof '10' is exactly equal to 10. If not make it exactly equal. //qstn regarding clarification about the task
-// comparing type and values
+// 3 - Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
 if (typeof('10') === 10) {
     // if they aren't exactly equal
-    console.log(
-        `${typeof('10') === (10)}: typeof'10' is not exactly equal to 10`
-        )
-
-    console.log(
-        `${typeof('10') === typeof(10)}: typeof'10' is not exactly equal to 10`
-        )
-
-    console.log(
-        `${'10' === 10}: typeof '10' is not exactly equal to 10`
-        )
+    console.log(`${typeof('10') === (10)}: typeof'10' is not exactly equal to 10`)
 }
 else {
     /* To make them exactly equal
@@ -39,13 +28,8 @@ else {
     compare typeof after conversion
     compare after conversion
     */
-    console.log(
-        `${(typeof(10) === typeof(Number('10')))}: typeof '10' is exactly equal to 10`
-        )
-
-    console.log(
-        `${(10 === Number('10'))}: typeof '10' is exactly equal to 10`
-        )
+    console.log(`${(typeof(10) === typeof(Number('10')))}: typeof '10' is exactly equal to 10`)
+    console.log(`${(10 === Number('10'))}: typeof '10' is exactly equal to 10`)
 }
 
 
@@ -53,9 +37,7 @@ else {
 // using if/else
 if (parseFloat('9.8') === 10) {
     // if they aren't exactly equal
-    console.log(
-        `${(10 === parseFloat('9.8'))}: parseFloat('9.8') is not exactly equal to 10`
-        )
+    console.log(`${(10 === parseFloat('9.8'))}: parseFloat('9.8') is not exactly equal to 10`)
 }
 else {
     /* To make them exactly equal
@@ -65,10 +47,10 @@ else {
     */
     console.log(
         `${(10 === Number(Math.ceil(parseFloat('9.8'))))}: parseFloat('9.8') is exactly equal to 10`
-        )
+    )
     console.log(
         `${(10 === Number(Math.round(parseFloat('9.8'))))}: parseFloat('9.8') is exactly equal to 10`
-        )
+    )
 }
 
 // uring ternary operators

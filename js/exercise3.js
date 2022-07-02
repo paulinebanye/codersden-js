@@ -23,14 +23,13 @@ console.log(text_2.match(/because/gi))
 
     const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
 */
-
 const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
 
 /* 
 use regular expressions to declare the invalid characters
 use g to search the whole sentence and i to ignore case
 */
-let regEx = /[$%@;&#!,.?]/gi
+let regEx = /[$%@;&#!?]/gi
 
 /*
 Remove the invalid characters using replace
@@ -39,11 +38,11 @@ then split the words into an array at the spaces
 let cleaned = sentence.replace(regEx, "").split(" ")
 console.log(cleaned)
 
-// declare empty dictionary to hold the words
+// declare empty object to hold the words
 let appearance = {}
 // declare variable for default count
 let count = 0
-// declare cariable for the word with the maximum count
+// declare variable for the word with the maximum count
 let maxWord = ""
 
 // loop over all the words in the array
@@ -84,7 +83,7 @@ let annual_bonus = Number(num_arr[1])
 
 // calculate monthly income
 let monthly_income = (
-    Number(Math.max(num_arr[0])) + Number(Math.min(num_arr[2]))
+    Number(num_arr[0]) + Number(num_arr[2])
     ) * 12
 
 // calculate annual income
@@ -96,5 +95,5 @@ To get yearly income, sum monthly salary and income from online courses then mul
 add the yearly earning with annual bonus
 */
 console.log(
-    Number(num_arr[1]) + ((Number(Math.max(num_arr[0])) + Number(Math.min(num_arr[2]))) * 12)
+    Number(num_arr[1]) + ((Number(num_arr[0]) + Number(num_arr[2])) * 12)
     )
