@@ -2,7 +2,7 @@
 
 Repo containing the assignments from the [30 days of JavaScript challenge](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 
-## 30 Days Of JavaScript: Booleans, Operators, Date
+## Booleans, Operators, Date
 
 Day 3 focuses on booleans, operators and dates
 
