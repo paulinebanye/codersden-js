@@ -1,6 +1,6 @@
 # 30 Days of JavaScript challenge - Day 4
 
-Repo containing the assignments from the [30 days of JavaScript challenge](https://github.com/Asabeneh/30-Days-Of-JavaScript)
+Repo containing the assignments from the [30 days of JavaScript challenge](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/04_Day_Conditionals/04_day_conditionals.md)
 
 ## Conditionals
 
