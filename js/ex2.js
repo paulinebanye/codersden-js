@@ -34,8 +34,8 @@ June, July or August, the season is Summer
 */
 
 // prompt for and convert user input to lowercase
-let inputMonth = prompt("What's the month today?");
-let season = inputMonth.toLowerCase();
+let enterMonth = prompt("What's the month today?");
+let season = enterMonth.toLowerCase();
 
 // check month based on user input and return the season
 switch(season){

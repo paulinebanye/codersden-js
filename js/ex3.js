@@ -21,8 +21,6 @@ let year = new Date().getFullYear()
 
 // calculation to check if the year is a leap year. Returns a boolean
 let leapYear = ((0 == year % 4) && (0 != year % 100) || (0 == year % 400))
-console.log(year, leapYear)
-
 
 switch (daysInMonth) {
     // if month is september, april, june or november, assign 30 days
