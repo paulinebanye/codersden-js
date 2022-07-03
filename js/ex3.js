@@ -1,13 +1,11 @@
+// Exercise 3
 /* Write a program which tells the number of days in a month.
 Enter a month: January
 January has 31 days.
-
 Enter a month: JANUARY
 January has 31 day
-
 Enter a month: February
 February has 28 days.
-
 Enter a month: FEbruary
 February has 28 days.
 */
@@ -18,6 +16,7 @@ let daysInMonth = inputMonth.toLowerCase();
 
 // return current year
 let year = new Date().getFullYear()
+console.log(year)
 
 // calculation to check if the year is a leap year. Returns a boolean
 let leapYear = ((0 == year % 4) && (0 != year % 100) || (0 == year % 400))
@@ -28,16 +27,15 @@ switch (daysInMonth) {
     case "april": 
     case "june":
     case "november": 
-        console.log(`There are 30 days in ${daysInMonth}`);
+        console.log(`${daysInMonth} has 30 days`);
         break;
     case "february":
-        // if leap year is true
-        if (leapYear) {
-            console.log(`There are 29 days in ${daysInMonth}`);
-        } else {
-            // if leap year is false
-            console.log(`There are 28 days in ${daysInMonth}`);
-        }
+        /* check if leapYear is true
+        if true, return february has 29 days else 28 days
+        */
+        leapYear
+        ? console.log(`${daysInMonth} has 29 days`)
+        : console.log(`${daysInMonth} has 28 days`);
         break;
     // all other months
     case "october": 
@@ -47,9 +45,9 @@ switch (daysInMonth) {
     case "may":         
     case "july":
     case "august":         
-        console.log(`There are 31 days in ${daysInMonth}`);
+        console.log(`${daysInMonth} has 31 days`);
         break;
     default:
-        // if month is invalis
+        // if month is invalid
         console.log(`${daysInMonth} is not a valid month`);
     }
