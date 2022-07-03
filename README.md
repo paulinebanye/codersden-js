@@ -1,6 +1,6 @@
 # 30 Days of JavaScript challenge - Day 3
 
-Repo containing the assignments from the [30 days of JavaScript challenge](https://github.com/Asabeneh/30-Days-Of-JavaScript)
+Repo containing the assignments from the [30 days of JavaScript challenge](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/03_Day_Booleans_operators_date/03_booleans_operators_date.md)
 
 ## Booleans, Operators, Date
 
