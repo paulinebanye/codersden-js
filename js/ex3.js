@@ -15,7 +15,7 @@ let inputMonth = prompt("What's the month today?");
 let daysInMonth = inputMonth.toLowerCase();
 
 // return current year
-let year = new Date().getFullYear()
+let year = new Date()
 console.log(year)
 
 // calculation to check if the year is a leap year. Returns a boolean
@@ -31,7 +31,7 @@ switch (daysInMonth) {
         break;
     case "february":
         /* check if leapYear is true
-        if true, return february has 29 days else 28 days
+        // if true, return february has 29 days else 28 days
         */
         leapYear
         ? console.log(`${daysInMonth} has 29 days`)
