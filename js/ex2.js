@@ -182,7 +182,8 @@ Enter number of years you live: 100
 You lived 3153600000 seconds.
 */
 // years lived
-let currentAge = prompt("enter your age");
+// let currentAge = prompt("enter your age");
+let currentAge = 29
 let maxAge = 100;
 
 // convert age to seconds and calculate time lived
@@ -192,7 +193,7 @@ console.log(
   );
 
 //  convert max age to seconds and calculate the amount of seconds a person can live for
-possibleLifetime = ((1000 * 60 * 60 * 24 * 365) * (maxAge));
+possibleLifetime = ((60 * 60 * 24 * 365) * (maxAge));
 console.log(
     `You can live for ${possibleLifetime} seconds`
     );
