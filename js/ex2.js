@@ -9,7 +9,6 @@ The area of the triangle is 100
 triBase = prompt("Enter base of the triangle: ");
 triHeight = prompt("Enter height of triangle: ");
 
-
 // calculate the area and return the answer
 triArea = 0.5 * triBase * triHeight;
 console.log(`the area of the triangle is ${triArea}`);
@@ -181,25 +180,24 @@ age >= 18
 Enter number of years you live: 100
 You lived 3153600000 seconds.
 */
-// years lived
-// let currentAge = prompt("enter your age");
-let currentAge = 29
+// declare variables for max age and current age
 let maxAge = 100;
+let currentAge = prompt("enter your age");
 
-// convert age to seconds and calculate time lived
+// convert current age to seconds and calculate time lived
 timeLived = ((1000 * 60 * 60 * 24 * 365) * (currentAge));
 console.log(
   `You've lived for ${timeLived} seconds`
   );
 
-//  convert max age to seconds and calculate the amount of seconds a person can live for
-possibleLifetime = ((60 * 60 * 24 * 365) * (maxAge));
+// convert max age to seconds and calculate the amount of seconds a person can live for
+possibleLifetime = ((1000 * 60 * 60 * 24 * 365) * (maxAge));
 console.log(
     `You can live for ${possibleLifetime} seconds`
     );
 
-// deduct current age from max age of 100 and convert to seconds to calculate time left
-timeLeft = ((1000 * 60 * 60 * 24 * 365) * (maxAge - (currentAge)));
+// deduct possible lifetime from time lived to calculate the seconds a person has left to live
+let timeLeft = possibleLifetime - timeLived;
 console.log(
   `You can live for ${timeLeft} seconds more`
   );
@@ -210,7 +208,6 @@ YYYY-MM-DD HH:mm
 DD-MM-YYYY HH:mm
 DD/MM/YYYY HH:mm
 */
-
 // declare the minutes, hours, date and month
 let minsNow = thisYear.getMinutes();
 let hourNow = thisYear.getHours();
