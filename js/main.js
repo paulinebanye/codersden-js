@@ -57,8 +57,8 @@ Ex10 - Declare two variables myAge and yourAge and assign them initial values an
 I am 25 years old.
  You are 30 years old.
  */
-myAge = 25
-yourAge = 30
+let myAge = 25
+let yourAge = 30
 
 console.log(`I am ${myAge} years old`)
 console.log(`you are ${yourAge} years old`)
