@@ -87,7 +87,7 @@ let monthly_income = (
     ) * 12
 
 // calculate annual income
-annual_income = annual_bonus + monthly_income
+let annual_income = annual_bonus + monthly_income
 console.log(annual_income)
 
 /* option-2: calculate annual income in one line
