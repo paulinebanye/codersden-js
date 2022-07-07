@@ -8,5 +8,5 @@ const webTechs = [
     'MongoDB'
 ];
 
-// to sllow export to another file
+// to allow export to another file
 export {webTechs};

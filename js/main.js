@@ -13,9 +13,9 @@ console.log(newArray.length);
 
 
 // 4 - Get the first element, the middle element and the last element of the array
-firstItem = newArray[0];
-middleItem = newArray[3];
-lastItem = newArray[6];
+let firstItem = newArray[0];
+let middleItem = newArray[3];
+let lastItem = newArray[6];
 
 console.log(firstItem, middleItem, lastItem);
 
@@ -68,14 +68,14 @@ console.log(itCompanies[6].toUpperCase());
 
 // 12 - Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 // split the array into two to slice out amazon from the array
-companies = itCompanies.slice(0, itCompanies.length - 1)
-amazon = `${itCompanies.slice(6, itCompanies.length)}`
+let companies = itCompanies.slice(0, itCompanies.length - 1)
+let amazon = `${itCompanies.slice(6, itCompanies.length)}`
 
 console.log(companies);
 console.log(amazon);
 
 // merge both arrays in the specified format using concat method and template literals
-merged = companies.concat(`and ${amazon} are big IT companies`)
+let merged = companies.concat(`and ${amazon} are big IT companies`)
 console.log(merged)
 
 // An alternative is to print the array in the specified format using template literals
@@ -86,7 +86,7 @@ console.log(
 
 // 13 - Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 // specify the string to be searched for
-check = "oracle"
+let check = "oracle"
 
 /* convert the elements in the array to string and lowercase
 add the include to check for the specified string
@@ -131,14 +131,14 @@ console.log(arr)
 
 
 // 15 - Sort the array using sort() method
-sorted = itCompanies.sort();
+let sorted = itCompanies.sort();
 // the sort method sorts the items in the original array
 console.log(itCompanies.sort());
 
 
 // 16 - Reverse the array using reverse() method
 // the reverse method reverses the order of items in the original array
-reversed = itCompanies.reverse();
+let reversed = itCompanies.reverse();
 console.log(reversed)
 
 
@@ -147,7 +147,7 @@ console.log(reversed)
 to extract the first 3, select index 0 as the starting position
 specify 3 to extract the first 3 numbers
 */
-firstSlice = itCompanies.slice(0,3);
+let firstSlice = itCompanies.slice(0,3);
 console.log(firstSlice);
 
 
@@ -156,13 +156,13 @@ console.log(firstSlice);
 to extract the last 3, select index 4 as the starting position
 specifying the numbers of items to extract is not required
 */
-lastSlice = itCompanies.slice(4);
+let lastSlice = itCompanies.slice(4);
 console.log(lastSlice);
 
 
 // 19 - Slice out the middle IT company or companies from the array
 // index 3 is the starting position, and 4 is the element number to slice out
-midSlice = itCompanies.slice(3,4);
+let midSlice = itCompanies.slice(3,4);
 console.log(midSlice);
 
 
@@ -170,7 +170,7 @@ console.log(midSlice);
 /* 0 is the starting position, and 1 is the number of items to remove
 the array now contains 6 items
 */
-remFirst = itCompanies.splice(0,1);
+let remFirst = itCompanies.splice(0,1);
 console.log(itCompanies);
 
 
@@ -179,7 +179,7 @@ console.log(itCompanies);
 the array now has a length of 6 so there are 2 items in the middle
 2 is the starting position and 2 are the number of items to remove
 */
-remMid = itCompanies.splice(2,2);
+let remMid = itCompanies.splice(2,2);
 console.log(itCompanies);
 
 
@@ -188,11 +188,11 @@ console.log(itCompanies);
 the array has a length of 4 now and the last element is to be removed
 Used the array.length method to remove the last element in the array
 */
-remLast = itCompanies.splice(itCompanies.length - 1);
+let remLast = itCompanies.splice(itCompanies.length - 1);
 console.log(itCompanies);
 
 
 // 23 - Remove all IT companies
 // adding 0 to splice method removes all elements in the array
-remAll = itCompanies.splice(0);
+let remAll = itCompanies.splice(0);
 console.log(itCompanies);
