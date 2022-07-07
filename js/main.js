@@ -1,18 +1,18 @@
 // Exercises: Level 1
 // 1 - Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
-let firstName = "peter";
-let lastName = "stone";
-country = "canada";
+let first_Name = "peter";
+let last_Name = "stone";
+let country = "canada";
 let city = "alberta";
-let age = 18;
+let my_Age = 18;
 let isMarried = true;
 let year = 2022;
 
-console.log(typeof(firstName));
-console.log(typeof(lastName));
+console.log(typeof(first_Name));
+console.log(typeof(last_Name));
 console.log(typeof(country));
 console.log(typeof(city));
-console.log(typeof(age));
+console.log(typeof(my_Age));
 console.log(typeof(isMarried));
 console.log(typeof(year));
 
@@ -59,8 +59,8 @@ console.log(friday);
 
 // Find the length of python and jargon and make a falsy comparison statement.
 // declare variables to hold the lengths
-python = "python".length;
-jargon = "jargon".length;
+let python = "python".length;
+let jargon = "jargon".length;
 
 console.log(4 > 3);
 console.log(4 >= 3);
