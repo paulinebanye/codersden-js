@@ -1,6 +1,6 @@
 # 30 Days of JavaScript challenge - Day 6
 
-Repo containing the assignments from the [30 days of JavaScript challenge](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/04_Day_Conditionals/04_day_conditionals.md)
+Repo containing the assignments from the [30 days of JavaScript challenge](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/06_Day_Loops/06_day_loops.md)
 
 ## Loops
 

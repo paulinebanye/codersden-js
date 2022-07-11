@@ -67,6 +67,7 @@ let LenFourArr = [];
 for (let lenFour of countriesCopy){
     // if country length is equal to 4
     if (lenFour.length == 4){
+        console.log(lenFour);
         // push it to the array
         LenFourArr.push(lenFour)
     }
