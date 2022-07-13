@@ -102,7 +102,7 @@ console.log(m);
 
 
 // 7 - Compare the slope of above two questions.
-let compare = Math.abs(slope - m)
+let compare = Math.abs(slope - m);
 console.log(compare);
 
 slope > m
@@ -111,7 +111,7 @@ slope > m
     )
 : console.log(
     `the slope from question 5 (${m}) is greater than the slope from question 6 (${slope}) by ${compare}`
-    )
+    );
 
 
 /* 8 - Calculate the value of y (y = x2 + 6x + 9). 
