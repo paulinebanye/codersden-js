@@ -32,9 +32,12 @@ console.log(sortedWebTechs);
 /* 4 & 6 - Extract all the countries which contain the word 'land' from the countries array 
 and print it as array
 */
+// declare empty array
 let countryLand = [];
 for (let countryA of countriesCopy){
-    // if country includes land
+    /* iterate through the countries array
+    for each country, check if the country includes land
+    */
     if (countryA.includes("land")) {
         // push the countries to a new array
         countryLand.push(countryA);
@@ -49,8 +52,11 @@ console.log(countryLand);
 let count = 0;
 let maxCount;
 for (let maxCountry of countriesCopy){
-    // if the length of the country is higher than 0
+    /* iterate through the countries array
+    if current country length is higher than count,
+    */
     if (maxCountry.length > count){
+        // assign it as the country with the longest word count
         count = maxCountry.length;
         // identify and print the country with longest length
         maxCount = maxCountry;
@@ -63,12 +69,15 @@ console.log(maxCount);
 /* 7 - Extract all the countries containing only four characters from the countries array 
 and print it as array
 */
+// declare an empty array
 let LenFourArr = [];
 for (let lenFour of countriesCopy){
-    // if country length is equal to 4
+    /* iterate through the countries array
+    if country length is equal to 4
+    */
     if (lenFour.length == 4){
         console.log(lenFour);
-        // push it to the array
+        // push it to the empty array
         LenFourArr.push(lenFour);
     }
 }
@@ -79,9 +88,12 @@ console.log(LenFourArr);
 /* 8 - Extract all the countries containing two or more words from the countries array 
 and print it as array
 */
+// declare an empty array
 let multipleArr = [];
 for (let word of countriesCopy){
-    // if country length has a space
+    /* iterate through the countries array
+    if country length has a space
+    */
     if (word.includes(" ")){
         // push it to the array
         multipleArr.push(word);
@@ -92,10 +104,17 @@ console.log(multipleArr);
 
 
 // 9 - Reverse the countries array and capitalize each country and store it as an array
+// declare empty array
 let revCountry = [];
-// initialize the array and reverse it
+/* initialize the array beginning from the last element
+for each index greater than 0
+decrement the count until it reaches index 0
+*/
 for (let index = countriesCopy.length - 1; index >= 0;  index--) {
-    // change the countries to uppercase and push them the revCountry array
+    /* iterate through the countries array
+    for each country, change the countries to uppercase
+    push them the revCountry array
+    */
     revCountry.push(countriesCopy[index].toUpperCase());
 }
 // print output

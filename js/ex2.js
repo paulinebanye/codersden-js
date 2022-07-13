@@ -277,16 +277,18 @@ let techStack = [
     "Express", 
     "MongoDB"
 ];
-// iterate through the array
-for (let techs of techStack) {
-    // print the elements of the array
-    console.log(techs);
+// iterate through the array using a for loop
+for (let i = 0; i < techStack.length; i++) {
+    // print the elements of the array for every element
+    console.log(techStack[i]);
 }
 
-// iterate through the array
-for (let i = 0; i < techStack.length; i++) {
-    // print the elements of the array
-    console.log(techStack[i]);
+// OR
+
+// iterate through the array using a for of loop
+for (let techs of techStack) {
+    // print the elements of the array for every element
+    console.log(techs);
 }
 
 
@@ -294,10 +296,16 @@ for (let i = 0; i < techStack.length; i++) {
 reverse the order using loop without using a reverse method.
 */
 let fruits = ['banana', 'orange', 'mango', 'lemon'];
+// declare empty array
 let revFruits = [];
-// initialize the array
+/* initialize the array from the last element
+for each index greater than 0
+decrement the count until it reaches 0
+*/
 for (let index = fruits.length - 1; index >= 0;  index--) {
-    // push to the revfruits array
+    /* iterate through the array
+    push each element to the revfruits array
+    */
     revFruits.push(fruits[index]);
 }
 // print output
@@ -319,14 +327,22 @@ const fullStack = [
 */
 const fullStack = [
     ['HTML', 'CSS', 'JS', 'React'],
-    ['Node', 'Express', 'MongoDB']
+    ['Node', 'Express', 'MongoDB'],
 ];
-// iterate through the first array in the nested fullstack array
-for (let index = 0; index < fullStack.length; index++) {
-    // iterate through the second array the nested fullstack array
-    for (let indexB = 0; indexB < fullStack[index].length; indexB++) {
-        // convert both arrays to uppercase
-        let upper = fullStack[index][indexB].toUpperCase();
+/* initialize the first nested array in the fullstack array
+iterate through the first array
+for each index less than the length of the main array
+increment the count
+*/
+for (let arrayA = 0; arrayA < fullStack.length; arrayA++) {
+    /* initialize the second nested array in the fullstack array
+    iterate through the second array
+    for each index less than the length of the first nested array
+    increment the count
+    */
+    for (let arrayB = 0; arrayB < fullStack[arrayA].length; arrayB++) {
+        // convert elements of both arrays to uppercase
+        let upper = fullStack[arrayA][arrayB].toUpperCase();
         // print output
         console.log(upper);
     }
