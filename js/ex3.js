@@ -15,11 +15,11 @@ let inputMonth = prompt("What's the month today?");
 let daysInMonth = inputMonth.toLowerCase();
 
 // return current year
-let year = new Date()
-console.log(year)
+let year = new Date();
+console.log(year);
 
 // calculation to check if the year is a leap year. Returns a boolean
-let leapYear = ((0 == year % 4) && (0 != year % 100) || (0 == year % 400))
+let leapYear = ((0 == year % 4) && (0 != year % 100) || (0 == year % 400));
 
 switch (daysInMonth) {
     // if month is september, april, june or november, assign 30 days
@@ -50,4 +50,4 @@ switch (daysInMonth) {
     default:
         // if month is invalid
         console.log(`${daysInMonth} is not a valid month`);
-    }
+    };

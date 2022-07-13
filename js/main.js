@@ -61,8 +61,8 @@ a > b
 Enter a number: 9
 9 is is an odd number.
 */
-let enterNum = prompt("Enter a number")
+let enterNum = prompt("Enter a number");
 
 enterNum % 2 == 0
 ? console.log(`${enterNum} is an even number`)
-: console.log(`${enterNum} is an odd number`)
+: console.log(`${enterNum} is an odd number`);

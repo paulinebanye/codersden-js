@@ -61,7 +61,7 @@ switch(season){
         break;
     default:
         console.log(`${season} is not a month`);
-  }
+  };
 
 
 /* 3 - Check if a day is weekend day or a working day. Your script will take day as an input.
@@ -76,7 +76,7 @@ What is the day today? FrIDAy
 */
 
 // prompt for and convert user input to lowercase
-let inputDay = prompt("What is the day today?")
+let inputDay = prompt("What is the day today?");
 let dayOfTheWeek = inputDay.toLowerCase();
 
 // check day based on user input and return if the day is a work day or weekend
@@ -95,4 +95,4 @@ switch (dayOfTheWeek) {
     default:
         // return this message if the day is not valid
         console.log(`${dayOfTheWeek} is not a weekday`);
-}
+};
