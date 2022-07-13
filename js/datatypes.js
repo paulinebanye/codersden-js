@@ -2,8 +2,8 @@
  Check the data type of each variable
 */
 
-console.log(typeof 'sugary drinks')
-console.log(typeof 367)
-console.log(typeof true)
-console.log(typeof busy)
-console.log(typeof null)
+console.log(typeof 'sugary drinks');
+console.log(typeof 367);
+console.log(typeof true);
+console.log(typeof busy);
+console.log(typeof null);
