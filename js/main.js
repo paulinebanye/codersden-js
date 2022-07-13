@@ -306,13 +306,13 @@ initialise the loop
 generate array with 5 numbers
 increase count until it reaches 5
 */
-let myArray = []
+let myArray = [];
 for(let randomNum = 0; myArray.length < 5; randomNum++) {
     /* math floor to round down the numbers
     math.random to generate random numbers within a range of 0 - 20
     push the random numbers to the array
     */
-    myArray.push(Math.floor(Math.random() * 20))
+    myArray.push(Math.floor(Math.random() * 20));
 }
 // print the output
 console.log(myArray);
@@ -321,7 +321,7 @@ console.log(myArray);
 /* 14 - Develop a small script which generate array of 5 random numbers
  and the numbers must be unique
 */
-let myrray = []
+let myrray = [];
 for(let randomNum = 0; myrray.length < 5;  randomNum++) {
     /* math floor to round down the numbers
     math.random to generate random numbers within a range of 0 - 10
@@ -331,7 +331,7 @@ for(let randomNum = 0; myrray.length < 5;  randomNum++) {
     push the number to the array
     */
     if (!myrray.includes(randNum)) {
-        myrray.push(randNum)
+        myrray.push(randNum);
     }
 // print the output
 }console.log(myrray);
@@ -344,7 +344,7 @@ combinations and the length of the generated string
 let genString = "";
 let combos = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi\
 jklmnopqrstuvwxyz0123456789";
-let charLength = 6
+let charLength = 6;
 
 for (let i = 0; i < charLength; i++) {
 /* generate a random character using the combination declared above

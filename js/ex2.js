@@ -32,7 +32,10 @@ console.log(randomId);
 let result = "";
 let hexLen = 6;
 for (let i = 0; i < hexLen; i++) {
-    // convert to hexadecimal
+    /* math floor to round down the numbers
+    math.random to generate random numbers
+    tostring(32) to convert the result to hexadecimal
+    */
     result += (Math.floor(Math.random() * 16)).toString(32);
 }
 // print the output
@@ -46,7 +49,9 @@ let b;
 let c;
 
 for (let i = 0; i <= 100; i++) {
-    // generate random numbers
+    /* math floor to round down the numbers
+    math.random to generate random numbers
+    */
     a = Math.floor(Math.random() * 300);
     b = Math.floor(Math.random() * 200);
     c = Math.floor(Math.random() * 100);
@@ -60,9 +65,11 @@ console.log(`rgb(${a},${b},${c})`);
 "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
 */
 let countryArr = []
-for(let country of countriesA){
-    // convert to uppercase
-    // push country to country array
+for (let country of countriesA ){
+    /* iterate through the countries array
+    convert to uppercase
+    push country to country array
+    */
     countryArr.push(country.toUpperCase())
 }
 // print the output
@@ -130,18 +137,20 @@ If there is no country containing the word 'land', print 'All these countries ar
 */
 let landArr = [];
 for (let country of arr) {
-    // if country includes land; push to the array
+    /* iterate through the countries array
+    if country includes land; push to the array
+    */
     if (country.includes("land")) {
         landArr.push(country);
     } 
     else {
-    // print output
+    // if land isn't present, print output
     console.log(
         'All these countries are without land'
         );
     }
 }
-// print output
+// print array
 console.log(landArr);
 
 
@@ -152,7 +161,9 @@ If there is no country containing the word 'ai', print 'These are countries ends
 */
 let aiArr = [];
 for (let country of arr) {
-    // if country includes ia; push to the array
+    /* iterate through the countries array
+    if country includes ia; push to the array
+    */
     if (country.includes("ia")) {
         aiArr.push(country);
     } 
@@ -175,7 +186,10 @@ let lenCountry = 0;
 let maxString;
 for (let country of arr) {
     if (country.length > lenCountry) {
-        // identify the longest length
+        /* iterate through the countries array
+        if current country length is longer than lencountry,
+        assign it as the country with the longest length
+        */
         lenCountry = country.length;
         // identify the country with longest length
         maxString = country;
@@ -190,6 +204,10 @@ console.log(maxString);
 */
 let max5 = [];
 for (let country of arr) {
+    /* iterate through the countries array
+    if country length is equal to 5, 
+    push it to the array
+    */
     if (country.length == 5) {
         max5.push(country);
     }
@@ -200,10 +218,13 @@ console.log(max5);
 
 // 11 - declare variables for the tech with the longest word
 let lenTech = 0;
-let maxTech;
+let maxTech = "";
 for (let tech of webTechs) {
     if (tech.length > lenTech) {
-        // identify the word with longest length
+        /* iterate through the webtechs array
+        if current tech length is longer than lentech,
+        assign it as the tech with the longest length
+        */
         lenTech = tech.length;
         // identify the tech with the longest word
         maxTech = tech;

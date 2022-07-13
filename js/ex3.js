@@ -32,7 +32,7 @@ console.log(sortedWebTechs);
 /* 4 & 6 - Extract all the countries which contain the word 'land' from the countries array 
 and print it as array
 */
-let countryLand = []
+let countryLand = [];
 for (let countryA of countriesCopy){
     // if country includes land
     if (countryA.includes("land")) {
@@ -69,7 +69,7 @@ for (let lenFour of countriesCopy){
     if (lenFour.length == 4){
         console.log(lenFour);
         // push it to the array
-        LenFourArr.push(lenFour)
+        LenFourArr.push(lenFour);
     }
 }
 // print the output
