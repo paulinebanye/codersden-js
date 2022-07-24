@@ -334,7 +334,8 @@ for(let randomNum = 0; myrray.length < 5;  randomNum++) {
         myrray.push(randNum);
     }
 // print the output
-}console.log(myrray);
+}
+console.log(myrray);
 
 
 // 15 - Develop a small script which generate a six characters random id: 5j2khz
