@@ -240,7 +240,8 @@ let monthNow = thisYear.getMonth() + 1;
 
 /*
 return date and time in the formats specified
-add "00" and slice by -2 to adjust the formatting for the date/time i.e 07 instead of 7
+add "00" and slice by -2 to adjust the formatting for the date/time 
+i.e 07 instead of 7
 */
 let yearToday = (
     `${currentYear}-${("00" + monthNow)
