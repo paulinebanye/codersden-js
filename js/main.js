@@ -1,3 +1,5 @@
+
+
 // Exercise 1
 // 1 - Declare an empty array;
 let myArray = [];
@@ -156,7 +158,7 @@ console.log(firstSlice);
 to extract the last 3, select index 4 as the starting position
 specifying the numbers of items to extract is not required
 */
-let lastSlice = itCompanies.slice(4);
+let lastSlice = itCompanies.slice(-3);
 console.log(lastSlice);
 
 

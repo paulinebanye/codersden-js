@@ -3,11 +3,8 @@
 create a separate file web_techs.js and store the webTechs array in to this file. 
 Access both file in main.js file
 */
-import { countries } from './countries.js';
-import { webTechs } from './web_techs.js';
-
-console.log(countries);
-console.log(webTechs);
+// import { countries } from './countries.js';
+// import { webTechs } from './web_techs.js';
 
 
 // 2 - First remove all the punctuations, change the string to array and count the number of words in the array
