@@ -84,11 +84,11 @@ console.log(Math.round(Math.random() * 100));
 
 
 // 8 - Generate a random number between 50 and 100 inclusively.
-console.log(Math.round(Math.random() * 50) + 50);
+console.log(Math.round(Math.random() * 50) + 51);
 
 
 // 9 - Generate a random number between 0 and 255 inclusively.
-console.log(Math.round(Math.random() * 255));
+console.log(Math.round(Math.random() * 255) + 1);
 
 
 // 10 - Access the 'JavaScript' string characters using a random number.
@@ -103,11 +103,7 @@ console.log('JavaScript'[Math.floor(Math.random() * 'JavaScript'.length -1)]);
 4 1 4 16 64
 5 1 5 25 125
 */
-console.log('1\t1\t1\t1\t1');
-console.log('2\t1\t2\t4\t8');
-console.log('3\t1\t3\t9\t27');
-console.log('4\t1\t4\t16\t64');
-console.log('5\t1\t5\t25\t125');
+console.log('1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125');
 
 
 // 12 - Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction' qstn
@@ -118,6 +114,7 @@ used substr to extract the sentences by selecting the starting point index
 and the number of characters after
 */
 console.log(sentence_12.substr(31,24));
+console.log(sentence_12.slice(sentence_12.indexOf("b"), sentence_12.lastIndexOf("e") + 1));
 
 /* removing because because because from the sentence
 used substr to extract the separated sentences by selecting the starting point index
@@ -125,3 +122,5 @@ and the number of characters after
 used concat to merge the separated sentences together
 */
 console.log(sentence_12.substr(0,30).concat( sentence_12.substr(54,17)));
+console.log(sentence_12.slice(0,30).concat( sentence_12.slice(54)));
+

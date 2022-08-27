@@ -38,34 +38,31 @@ then split the words into an array at the spaces
 let cleaned = sentence.replace(regEx, "").split(" ");
 console.log(cleaned);
 
-// declare empty object to hold the words
-let appearance = {};
+// declare empty array to hold the words
+let  arr = [];
 // declare variable for default count
 let count = 0;
 // declare variable for the word with the maximum count
 let maxWord = "";
 
 // loop over all the words in the array
-for (word of cleaned) {
-    if (appearance[word]) {
+for (let word of cleaned) {
+    if ( arr[word]) {
         // if a unique word is already in the array, increment it by 1
-        appearance[word]++;
+         arr[word]++;
         // when a word is found, check if it's greater than count
-        if (appearance[word] > count) {
+        if (arr[word] > count) {
             // if the word is larger, assign it as the word with the highest count
-            count = appearance[word];
+            count =  arr[word];
             // return the word that has the highest count
             maxWord = word;
         }
     } 
     else {
         // if a unique word is not in the array, add it to the array
-        appearance[word] = 1;
+         arr[word] = 1;
     }
 }
-console.log(
-    appearance
-    );
 console.log(maxWord);
 
 
