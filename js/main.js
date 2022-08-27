@@ -21,8 +21,8 @@ increment count until it reaches 10
 let whileIndex = 0;
 
 while (whileIndex <= 10) {
-    console.log(whileIndex);
     whileIndex++;
+    console.log(whileIndex);
 }
 
 // do while loop
