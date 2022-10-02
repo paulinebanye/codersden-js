@@ -11,3 +11,5 @@ Repo containing the assignments from the [30 days of JavaScript challenge](https
 - Day 4 - [Conditionals](https://github.com/pauline-banye/codersden-js/tree/day4)
 
 - Day 5 - [Arrays](https://github.com/pauline-banye/codersden-js/tree/day5)
+
+- Day 6 - [Functions](https://github.com/pauline-banye/codersden-js/tree/day6)
